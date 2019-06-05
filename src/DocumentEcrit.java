@@ -1,5 +1,6 @@
 
-public class DocumentEcrit extends Document {
+public abstract class DocumentEcrit extends Document {
+
 	private int nbreDePage;
 
 	public DocumentEcrit(String titre, String nomAuteur, boolean empruntPossible, int nbreDePage) {
@@ -20,12 +21,10 @@ public class DocumentEcrit extends Document {
 	/*
 	 * public float coutdc() { return this.getNbreDePage() * 0.5f; }
 	 */
+
 	@Override
 	public float cout() {
 		// TODO Auto-generated method stub
 		return this.getNbreDePage() * 0.5f;
 	}
-
-	// possibilité d'emprunt
-
 }

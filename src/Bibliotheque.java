@@ -35,7 +35,7 @@ public class Bibliotheque {
 		int sum = 0;
 		for (int i = 0; i < documents.length; i++) {
 			if (documents[i] != null && documents[i] instanceof Video) {
-				if (((Video) documents[i]).getTypeDeSupport().equals("DVD")) {
+				if (((Video) documents[i]).getTypeDeSupport() == TypeSupport.DVD) {
 					sum++;
 				}
 			}

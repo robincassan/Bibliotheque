@@ -1,17 +1,17 @@
 
 public final class Video extends Document {
 
-	private String typeDeSupport;
+	private TypeSupport typeDeSupport;
 
-	public String getTypeDeSupport() {
+	public TypeSupport getTypeDeSupport() {
 		return typeDeSupport;
 	}
 
-	public void setTypeDeSupport(String typeDeSupport) {
+	public void setTypeDeSupport(TypeSupport typeDeSupport) {
 		this.typeDeSupport = typeDeSupport;
 	}
 
-	public Video(String titre, String nomAuteur, String typeDeSupport) {
+	public Video(String titre, String nomAuteur, TypeSupport typeDeSupport) {
 		super(titre, nomAuteur, true);
 		this.typeDeSupport = typeDeSupport;
 
@@ -26,6 +26,11 @@ public final class Video extends Document {
 	public float coutvid() {
 		return 70.0f;
 
+	}
+
+	@Override
+	public boolean isEmpruntPossible() {
+		return true;
 	}
 
 }
