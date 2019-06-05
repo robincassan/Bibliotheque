@@ -1,11 +1,12 @@
 
-public class Periodique extends Document {
+public class Periodique extends Livre {
 
 	private String numero;
 
-	public Periodique(String titre, String nomAuteur, String numero) {
-		super(titre, nomAuteur);
+	public Periodique(String titre, String nomAuteur, int nbreDePage, String numero) {
+		super(titre, nomAuteur, false, nbreDePage);
 		this.numero = numero;
+		// TODO Auto-generated constructor stub
 	}
 
 	public String getNumero() {

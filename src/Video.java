@@ -1,5 +1,5 @@
 
-public class Video extends Document {
+public final class Video extends Document {
 
 	private String typeDeSupport;
 
@@ -12,8 +12,19 @@ public class Video extends Document {
 	}
 
 	public Video(String titre, String nomAuteur, String typeDeSupport) {
-		super(titre, nomAuteur);
+		super(titre, nomAuteur, true);
 		this.typeDeSupport = typeDeSupport;
+
+	}
+
+	@Override
+	public float cout() {
+		// TODO Auto-generated method stub
+		return 70.0f;
+	}
+
+	public float coutvid() {
+		return 70.0f;
 
 	}
 
